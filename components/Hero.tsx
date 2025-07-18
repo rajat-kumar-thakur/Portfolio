@@ -11,10 +11,9 @@ export function Hero() {
   const [isDeleting, setIsDeleting] = useState(false);
 
   const texts = [
-    'Full Stack Developer',
     'Software Engineer',
-    'React Specialist',
-    'Node.js Expert'
+    'Data Scientist',
+    'Full Stack Developer'    
   ];
 
   useEffect(() => {
@@ -54,18 +53,20 @@ export function Hero() {
     <section className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-background to-secondary/20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
         <div className="max-w-4xl mx-auto">
-          {/* Profile Image Placeholder */}
-          <div className="w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-            <span className="text-4xl font-bold text-white">RT</span>
-          </div>
+          {/* Profile Image */}
+          <img
+            src="/profile.jpg"
+            alt="Rajat Kumar Thakur profile"
+            className="w-32 h-32 mx-auto mb-8 rounded-full border-4 border-primary object-cover shadow-lg"
+          />
 
           {/* Name and Title */}
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
-            Hi, I'm <span className="text-primary">Rajat Kumar Thakur</span>
+            Hi, I&apos;m <span className="text-primary">Rajat Kumar Thakur</span>
           </h1>
           
           <div className="text-xl md:text-2xl mb-8 text-foreground/80 min-h-[2rem]">
-            I'm a <span className="text-primary font-semibold">{currentText}</span>
+            I&apos;m a <span className="text-primary font-semibold">{currentText}</span>
             <span className="animate-pulse">|</span>
           </div>
 

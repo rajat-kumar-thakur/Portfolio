@@ -22,21 +22,33 @@ export function Contact() {
     });
   };
 
+  const FORMSPREE_ENDPOINT = "https://formspree.io/f/mkgzgpor";
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({ name: '', email: '', subject: '', message: '' });
-    }, 3000);
+
+    try {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      setIsSubmitting(false);
+      if (response.ok) {
+        setIsSubmitted(true);
+        setTimeout(() => {
+          setIsSubmitted(false);
+          setFormData({ name: '', email: '', subject: '', message: '' });
+        }, 3000);
+      } else {
+        alert("There was an error sending your message. Please try again.");
+      }
+    } catch (error) {
+      setIsSubmitting(false);
+      alert("There was an error sending your message. Please try again.");
+    }
   };
 
   const contactInfo = [
@@ -55,8 +67,8 @@ export function Contact() {
     {
       icon: <MapPin className="h-5 w-5" />,
       title: 'Location',
-      details: 'Gujarat, India',
-      href: 'https://maps.google.com/?q=Gujarat,India'
+      details: 'Delhi, India',
+      href: 'https://maps.google.com/?q=Delhi,India'
     }
   ];
 
@@ -72,11 +84,17 @@ export function Contact() {
       name: 'LinkedIn',
       href: 'https://linkedin.com/in/rajat-kumar-thakur',
       username: '/in/rajat-kumar-thakur'
+    },
+    {
+      icon: <Twitter className="h-5 w-5" />,
+      name: 'X (Twitter)',
+      href: 'https://x.com/RajatKrThakur04',
+      username: '@RajatKrThakur04'
     }
   ];
 
   return (
-    <section id="contact" className="py-20 bg-background">
+    <section id="contact" className="py-20 bg-secondary/20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">

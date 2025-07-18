@@ -5,8 +5,8 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Rajat Kumar Thakur - Software Developer Portfolio',
-  description: 'Professional portfolio of Rajat Kumar Thakur, a skilled Full Stack Developer with 3+ years of experience specializing in React.js, Node.js, MongoDB, and modern web technologies.',
+  title: 'Rajat Kumar Thakur | Portfolio',
+  description: 'Professional portfolio of Rajat Kumar Thakur, a skilled Full Stack Developer with experience specializing in React.js, Node.js, MongoDB, and modern web technologies.',
   keywords: ['Rajat Kumar Thakur', 'Full Stack Developer', 'React.js', 'Node.js', 'MongoDB', 'JavaScript', 'Portfolio'],
   authors: [{ name: 'Rajat Kumar Thakur' }],
   creator: 'Rajat Kumar Thakur',
@@ -23,20 +23,16 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Rajat Kumar Thakur - Software Developer Portfolio',
+    title: 'Rajat Kumar Thakur',
     description: 'Professional portfolio showcasing Full Stack development expertise with React.js, Node.js, and modern web technologies.',
     creator: '@rajat_thakur',
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+    <html lang="en">
+      <body className="min-h-screen bg-background font-sans antialiased">
         {children}
       </body>
     </html>

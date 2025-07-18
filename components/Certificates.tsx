@@ -5,16 +5,20 @@ import { Card } from './ui/card';
 
 const certificates = [
   {
-    title: 'NVIDIA Certificate of Competency in Evaluation and Light Customization of LLMs',
+    title: 'Evaluation and Light Customization of Large Language Models',
     issuer: 'NVIDIA',
-    date: '2025',
-    description: 'Earned for demonstrating competency in evaluation and light customization of large language models (LLMs).'
+    date: 'July 2025',
+    description: 'Certificate earned for demonstrating competence in completion of evaluation and light customization of large language models.',
+    image: '/certificate_llms.png', // Add your image to public folder
+    url: 'https://learn.nvidia.com/certificates?id=Kb8gQzsGRY-OLYZnV2KMow' // Replace with actual certificate link
   },
   {
-    title: 'Deep Learning Specialization (12-hour online training)',
+    title: 'Fundamentals of Deep Learning',
     issuer: 'NVIDIA',
-    date: '2025',
-    description: 'Completed a comprehensive 12-hour online training specializing in deep learning.'
+    date: 'September 2024',
+    description: 'Certificate earned for demonstrating competence in completion of fundamentals of deep learning.',
+    image: '/certificate_deeplearning.png', // Add your image to public folder
+    url: 'https://learn.nvidia.com/certificates?id=jhY7wEZxSJi6jGO9czVKmg' // Replace with actual certificate link
   }
 ];
 
@@ -33,9 +37,22 @@ export function Certificates() {
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {certificates.map((cert, idx) => (
             <Card key={idx} className="p-6 flex flex-col gap-4 hover:shadow-lg transition-shadow">
+              {cert.image && (
+                <img
+                  src={cert.image}
+                  alt={cert.title}
+                  className="w-full h-40 object-contain mb-2 rounded"
+                />
+              )}
               <div className="flex items-center gap-3 mb-2">
                 <Award className="h-6 w-6 text-primary" />
-                <h3 className="text-xl font-semibold text-foreground">{cert.title}</h3>
+                {cert.url ? (
+                  <a href={cert.url} target="_blank" rel="noopener noreferrer" className="text-xl font-semibold text-primary hover:underline">
+                    {cert.title}
+                  </a>
+                ) : (
+                  <h3 className="text-xl font-semibold text-foreground">{cert.title}</h3>
+                )}
               </div>
               <div className="text-foreground/70 text-sm mb-1">
                 <span className="font-medium">{cert.issuer}</span> &middot; {cert.date}
