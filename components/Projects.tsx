@@ -9,7 +9,7 @@ interface Project {
   description: string;
   image: string;
   technologies: string[];
-  liveUrl: string;
+  liveUrl?: string;
   githubUrl: string;
   featured: boolean;
   stats?: {
@@ -23,48 +23,45 @@ export function Projects() {
   const projects: Project[] = [
     {
       title: 'AI Readme Generator',
-      description: 'Developed an AI-powered README generator using Next.js, REST API, Gemini AI, and Tailwind CSS. Produces READMEs in under 10s, supports 200+ users, and integrates GitHub REST API and custom prompts.',
-      image: '',
-      technologies: ['Next.js', 'REST API', 'Gemini AI', 'Tailwind CSS'],
-      liveUrl: '',
-      githubUrl: 'https://github.com/rajat-kumar-thakur/ai-readme-generator',
+      description: 'Developed an AI-powered README generator using Next.js, REST API, Gemini AI, and Tailwind CSS. Produces READMEs in under 10s, and integrates GitHub REST API and custom prompts.',
+      image: '/githubreadmegenerator.png',
+      technologies: ['Next.js', 'REST API', 'Google Gemini', 'Tailwind CSS'],
+      liveUrl: 'https://custom-github-ai-readme-generator.vercel.app/',
+      githubUrl: 'https://github.com/rajat-kumar-thakur/GithubReadmeGenerator',
       featured: true,
-      stats: { users: '200+' }
+      stats: {  users: '200+' }
     },
     {
       title: 'Edge, Corner and Pose Estimation for Pick and Place Applications',
       description: 'Prepared a 4x faster pipeline for pose estimation in point clouds using surface variation and Harris Corner detection. Achieved a 70% reduction in computation time compared to state-of-the-art methods.',
-      image: '',
-      technologies: ['Computer Vision'],
-      liveUrl: '',
-      githubUrl: '',
+      image: '/workflow.png',
+      technologies: ['Computer Vision', 'Python', '3D Point Cloud'],
+      githubUrl: 'https://github.com/rajat-kumar-thakur/Edge-and-Corner-Detection',
+      featured: true,
+    },
+    {
+      title: 'Restaurant Management System in Assembly',
+      description: 'Accelerated Microsoft Macro Assembler based Restaurant Management System food service operations, reducing order processing time. Managed bill history and automated bill generation for restaurants.',
+      image: '/assembly.png',
+      technologies: ['x86 Assembly Language', 'MASM'],
+      githubUrl: 'https://github.com/rajat-kumar-thakur/Restaurant-Mangament-System',
       featured: true,
     },
     {
       title: 'Low Light Image Enhancement using Deep Learning',
-      description: 'Executed a 2-phase approach for enhancing low-light images using Decomposition and Refinement techniques. Achieved 90% improvement in brightness and contrast.',
+      description: 'Executed a two-phase approach for enhancing low-light images using Decomposition and Refinement techniques. Achieved 90% improvement in brightness and contrast.',
       image: '',
       technologies: ['Deep Learning', 'Image Processing'],
-      liveUrl: '',
       githubUrl: '',
       featured: false,
     },
     {
       title: 'File Sharing Web App',
-      description: 'Built a full-stack file sharing platform with automated email integration, managing 1000s of concurrent users. Added email automation for personalized download messages, improving engagement by 70%.',
+      description: 'Built a full-stack file sharing platform with automated email integration, managing concurrent users. Added email automation for personalized download messages, improving engagement.',
       image: '',
-      technologies: ['MERN'],
+      technologies: ['React', 'Node.js', 'Express', 'MongoDB'],
       liveUrl: '',
-      githubUrl: '',
-      featured: false,
-    },
-    {
-      title: 'Restaurant Management System in Assembly',
-      description: 'Accelerated Microsoft Macro Assembler based RMS food service operations, reducing order processing time by 70%. Managed bill history and automated bill generation for restaurants.',
-      image: '',
-      technologies: ['x86 Assembly Language', 'MASM32'],
-      liveUrl: '',
-      githubUrl: '',
+      githubUrl: 'https://github.com/rajat-kumar-thakur/File-Sharing-App',
       featured: false,
     },
   ];
@@ -136,21 +133,23 @@ export function Projects() {
                 )}
                 
                 <div className="flex gap-2">
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    asChild
-                  >
-                    <a
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center"
+                  {project.liveUrl && (
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      asChild
                     >
-                      <ExternalLink className="h-4 w-4 mr-1" />
-                      Live Demo
-                    </a>
-                  </Button>
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center"
+                      >
+                        <ExternalLink className="h-4 w-4 mr-1" />
+                        Live Demo
+                      </a>
+                    </Button>
+                  )}
                   <Button
                     variant="outline"
                     size="sm"
@@ -204,22 +203,26 @@ export function Projects() {
                 </div>
                 
                 <div className="flex gap-2">
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-primary hover:text-primary/80 transition-colors"
-                  >
-                    <ExternalLink className="h-4 w-4" />
-                  </a>
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-primary hover:text-primary/80 transition-colors"
-                  >
-                    <Github className="h-4 w-4" />
-                  </a>
+                  {project.liveUrl && (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary hover:text-primary/80 transition-colors"
+                    >
+                      <ExternalLink className="h-4 w-4" />
+                    </a>
+                  )}
+                  {project.githubUrl && (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary hover:text-primary/80 transition-colors"
+                    >
+                      <Github className="h-4 w-4" />
+                    </a>
+                  )}
                 </div>
               </Card>
             ))}
@@ -236,7 +239,7 @@ export function Projects() {
             asChild
           >
             <a
-              href="https://github.com/rajat-thakur"
+              href="https://github.com/rajat-kumar-thakur"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center"

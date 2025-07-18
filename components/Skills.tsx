@@ -31,9 +31,9 @@ export function Skills() {
       title: 'Languages',
       icon: <Code className="h-6 w-6" />,
       skills: [
-        { name: 'C', level: 90 },
-        { name: 'C++', level: 90 },
-        { name: 'Python', level: 85 },
+        { name: 'C', level: 97 },
+        { name: 'C++', level: 95 },
+        { name: 'Python', level: 90 },
         { name: 'R', level: 70 },
         { name: 'JavaScript', level: 85 },
       ],
@@ -42,9 +42,9 @@ export function Skills() {
       title: 'Databases',
       icon: <Database className="h-6 w-6" />,
       skills: [
-        { name: 'SQL', level: 80 },
+        { name: 'SQL', level: 95 },
         { name: 'MongoDB', level: 80 },
-        { name: 'PostgreSQL', level: 75 },
+        { name: 'PostgreSQL', level: 70 },
       ],
     },
     {
@@ -56,7 +56,7 @@ export function Skills() {
         { name: 'Node.js', level: 80 },
         { name: 'Express', level: 75 },
         { name: 'Tailwind CSS', level: 80 },
-        { name: 'TensorFlow', level: 70 },
+        { name: 'Pytorch', level: 85 },
       ],
     },
     {
@@ -65,9 +65,8 @@ export function Skills() {
       skills: [
         { name: 'Google Cloud Platform', level: 70 },
         { name: 'Firebase', level: 70 },
-        { name: 'Docker (basics)', level: 60 },
         { name: 'Git/GitHub', level: 85 },
-        { name: 'Postman', level: 75 },
+        { name: 'Postman', level: 85 },
       ],
     },
   ];
@@ -133,7 +132,6 @@ export function Skills() {
               'Matplotlib',
               'VS Code',
               'Jupyter Notebook',
-              'TensorBoard',
               'Archimate',
               'StarUML',
               'Linux',

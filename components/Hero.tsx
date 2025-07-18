@@ -71,9 +71,9 @@ export function Hero() {
 
           {/* Description */}
           <p className="text-lg md:text-xl mb-12 text-foreground/70 max-w-2xl mx-auto leading-relaxed">
-            Passionate Full Stack Developer with 3+ years of experience in building scalable web applications 
-            using modern technologies like React, Node.js, and cloud platforms. I love creating efficient, 
-            user-friendly solutions that make a real impact.
+            Dedicated and passionate Computer Science student with a strong interest in Artificial Intelligence, Deep Learning, 
+            and Full Stack Development. 
+            I am skilled in multiple programming languages and technologies, including C++, Python, JavaScript, and frameworks like Next.js and Pytorch. 
           </p>
 
           {/* CTA Buttons */}
@@ -105,7 +105,7 @@ export function Hero() {
           {/* Social Links */}
           <div className="flex justify-center space-x-6">
             <a
-              href="https://github.com/rajat-thakur"
+              href="https://github.com/rajat-kumar-thakur"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-secondary hover:bg-secondary/80 transition-colors hover:scale-110 transform duration-200"
@@ -123,7 +123,9 @@ export function Hero() {
               <Linkedin className="h-6 w-6" />
             </a>
             <a
-              href="mailto:rajatkumarthakur@gmail.com"
+              href="mailto: rajatlovescloud@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-3 rounded-full bg-secondary hover:bg-secondary/80 transition-colors hover:scale-110 transform duration-200"
               aria-label="Email Contact"
             >

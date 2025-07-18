@@ -24,7 +24,7 @@ export function About() {
               I am a highly motivated Computer Science student at IIIT Vadodara (GPA: 9.46), with hands-on experience in AI, deep learning, and full-stack development. My work includes research internships, impactful open-source projects, and leadership in academic initiatives. I excel at building efficient, scalable solutions and enjoy collaborating on challenging problems.
             </p>
             <p className="text-foreground/80 leading-relaxed">
-              My technical expertise spans C, C++, Python, JavaScript, Next.js, React, Node.js, SQL, MongoDB, TensorFlow, and cloud platforms like GCP and Firebase. I am passionate about leveraging technology for real-world impact and continuous learning.
+              My technical expertise spans C, C++, Python, JavaScript, Next.js, React, Node.js, SQL, MongoDB, TensorFlow, and cloud platforms. I am passionate about leveraging technology for real world impact and continuous learning.
             </p>
             <p className="text-foreground/80 leading-relaxed">
               I have mentored 90+ students, led academic committees, and consistently delivered high-quality results in both academic and project settings. Let's connect to build something great together!
@@ -54,7 +54,7 @@ export function About() {
                   </div>
                   <div>
                     <p className="text-sm text-foreground/60">Location</p>
-                    <p className="font-medium text-foreground">Gujarat, India</p>
+                    <p className="font-medium text-foreground">Delhi, India</p>
                   </div>
                 </div>
               </Card>
@@ -94,7 +94,7 @@ export function About() {
               <p className="text-foreground/80 leading-relaxed mb-6">
                 My journey into software development began with a strong foundation in computer science 
                 and a passion for creating innovative digital solutions. I've had the opportunity to work 
-                on diverse projects ranging from e-commerce platforms to enterprise applications, always 
+                on diverse projects ranging from optimizing language models to building applications for daily use, always 
                 focusing on delivering high-quality, scalable solutions.
               </p>
               <p className="text-foreground/80 leading-relaxed mb-6">

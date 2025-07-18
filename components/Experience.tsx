@@ -16,7 +16,7 @@ interface ExperienceItem {
 export function Experience() {
   const experiences: ExperienceItem[] = [
     {
-      title: 'Summer Intern',
+      title: 'Summer Research Intern',
       company: 'IIT Gandhinagar',
       location: 'Gujarat, India',
       period: 'May 2025 - July 2025',
@@ -26,14 +26,14 @@ export function Experience() {
         'Achieved 2.57s inference for StarCoder',
         'Developed efficient pipelines for code analysis under 3s',
       ],
-      technologies: ['Python', 'AI', 'TinyLlama', 'StarCoder'],
+      technologies: ['Python', 'Pytorch', 'AI', 'TinyLlama', 'StarCoder'],
     },
     {
       title: 'Teaching Assistant',
       company: 'IIIT Vadodara',
       location: 'Gujarat, India',
       period: 'Aug 2024 - Apr 2025',
-      description: 'Mentored 90+ students in software engineering and C programming. Assisted 100+ students in developing analytical and programming skills during C lab sessions.',
+      description: 'Mentored 90+ students in software engineering and C programming. Also assisted 100+ students in developing analytical and programming skills during C lab sessions.',
       achievements: [
         'Guided students in scalable software design',
         'Supported C programming labs for 100+ students',
@@ -45,7 +45,7 @@ export function Experience() {
       company: 'IIIT Vadodara',
       location: 'Gujarat, India',
       period: 'May 2024 - Apr 2025',
-      description: 'Led a team of 8 in planning and executing academic-focused events. Organized and promoted 10+ academic proposals to enhance student engagement.',
+      description: 'Led a team of 8 in planning and executing academic-focused events. Organized and promoted 10+ academic events to enhance student engagement.',
       achievements: [
         'Organized 10+ academic events',
         'Led a team of 8 members',
