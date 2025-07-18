@@ -5,8 +5,6 @@ import { Card } from './ui/card';
 import { useState, useEffect } from 'react';
 
 export function About() {
-  // Show only profile2.png
-
   return (
     <section id="about" className="py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
