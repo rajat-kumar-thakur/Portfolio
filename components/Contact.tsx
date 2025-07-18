@@ -43,20 +43,20 @@ export function Contact() {
     {
       icon: <Mail className="h-5 w-5" />,
       title: 'Email',
-      details: 'rajatkumarthakur@gmail.com',
-      href: 'mailto:rajatkumarthakur@gmail.com'
+      details: 'rajatlovescloud@gmail.com',
+      href: 'mailto:rajatlovescloud@gmail.com'
     },
     {
       icon: <Phone className="h-5 w-5" />,
       title: 'Phone',
-      details: '+91 XXXXX XXXXX',
-      href: 'tel:+91XXXXXXXXX'
+      details: '8810544717',
+      href: 'tel:8810544717'
     },
     {
       icon: <MapPin className="h-5 w-5" />,
       title: 'Location',
-      details: 'India',
-      href: 'https://maps.google.com/?q=India'
+      details: 'Gujarat, India',
+      href: 'https://maps.google.com/?q=Gujarat,India'
     }
   ];
 
@@ -64,20 +64,14 @@ export function Contact() {
     {
       icon: <Github className="h-5 w-5" />,
       name: 'GitHub',
-      href: 'https://github.com/rajat-thakur',
-      username: '@rajat-thakur'
+      href: 'https://github.com/rajat-kumar-thakur',
+      username: '@rajat-kumar-thakur'
     },
     {
       icon: <Linkedin className="h-5 w-5" />,
       name: 'LinkedIn',
       href: 'https://linkedin.com/in/rajat-kumar-thakur',
       username: '/in/rajat-kumar-thakur'
-    },
-    {
-      icon: <Twitter className="h-5 w-5" />,
-      name: 'Twitter',
-      href: 'https://twitter.com/rajat_thakur',
-      username: '@rajat_thakur'
     }
   ];
 

@@ -12,7 +12,7 @@ export function About() {
             About Me
           </h2>
           <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-            Get to know more about my background, experience, and what drives me as a developer.
+            Hi, I'm Rajat Kumar Thakur, a Computer Science undergraduate at IIIT Vadodara with a passion for AI, software engineering, and impactful technology solutions. I thrive on building innovative projects, optimizing systems, and mentoring peers.
           </p>
         </div>
 
@@ -21,19 +21,13 @@ export function About() {
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold mb-6 text-foreground">Professional Summary</h3>
             <p className="text-foreground/80 leading-relaxed">
-              I'm a passionate Full Stack Developer with 3+ years of experience in building scalable 
-              web applications. I specialize in React.js, Node.js, and modern JavaScript frameworks, 
-              with expertise in both frontend and backend development, cloud technologies, and DevOps practices.
+              I am a highly motivated Computer Science student at IIIT Vadodara (GPA: 9.46), with hands-on experience in AI, deep learning, and full-stack development. My work includes research internships, impactful open-source projects, and leadership in academic initiatives. I excel at building efficient, scalable solutions and enjoy collaborating on challenging problems.
             </p>
             <p className="text-foreground/80 leading-relaxed">
-              My technical expertise includes React.js, Next.js, Node.js, Express.js, MongoDB, PostgreSQL, 
-              AWS, Docker, and Kubernetes. I'm passionate about creating efficient, maintainable code and 
-              implementing best practices in software development and DevOps.
+              My technical expertise spans C, C++, Python, JavaScript, Next.js, React, Node.js, SQL, MongoDB, TensorFlow, and cloud platforms like GCP and Firebase. I am passionate about leveraging technology for real-world impact and continuous learning.
             </p>
             <p className="text-foreground/80 leading-relaxed">
-              I have experience working with agile methodologies, leading development teams, and 
-              delivering high-quality software solutions. I'm always eager to learn new technologies 
-              and contribute to innovative projects that make a positive impact.
+              I have mentored 90+ students, led academic committees, and consistently delivered high-quality results in both academic and project settings. Let's connect to build something great together!
             </p>
           </div>
 
@@ -48,7 +42,7 @@ export function About() {
                   </div>
                   <div>
                     <p className="text-sm text-foreground/60">Role</p>
-                    <p className="font-medium text-foreground">Full Stack Developer</p>
+                    <p className="font-medium text-foreground">Student, Aspiring Software Engineer</p>
                   </div>
                 </div>
               </Card>
@@ -60,7 +54,7 @@ export function About() {
                   </div>
                   <div>
                     <p className="text-sm text-foreground/60">Location</p>
-                    <p className="font-medium text-foreground">India</p>
+                    <p className="font-medium text-foreground">Gujarat, India</p>
                   </div>
                 </div>
               </Card>
@@ -72,7 +66,7 @@ export function About() {
                   </div>
                   <div>
                     <p className="text-sm text-foreground/60">Experience</p>
-                    <p className="font-medium text-foreground">3+ Years</p>
+                    <p className="font-medium text-foreground">Internships & Research</p>
                   </div>
                 </div>
               </Card>
@@ -84,7 +78,7 @@ export function About() {
                   </div>
                   <div>
                     <p className="text-sm text-foreground/60">Projects</p>
-                    <p className="font-medium text-foreground">25+ Completed</p>
+                    <p className="font-medium text-foreground">5+ Major Projects</p>
                   </div>
                 </div>
               </Card>

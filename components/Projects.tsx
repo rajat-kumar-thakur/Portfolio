@@ -22,88 +22,50 @@ interface Project {
 export function Projects() {
   const projects: Project[] = [
     {
-      title: 'Full-Stack E-Commerce Platform',
-      description: 'A comprehensive e-commerce solution built with React.js, Node.js, and MongoDB. Features include product catalog, shopping cart, payment processing, user authentication, and admin dashboard.',
-      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React.js', 'Node.js', 'MongoDB', 'Express.js', 'Redux', 'Stripe'],
-      liveUrl: 'https://ecommerce-platform-demo.vercel.app',
-      githubUrl: 'https://github.com/rajat-thakur/ecommerce-platform',
+      title: 'AI Readme Generator',
+      description: 'Developed an AI-powered README generator using Next.js, REST API, Gemini AI, and Tailwind CSS. Produces READMEs in under 10s, supports 200+ users, and integrates GitHub REST API and custom prompts.',
+      image: '',
+      technologies: ['Next.js', 'REST API', 'Gemini AI', 'Tailwind CSS'],
+      liveUrl: '',
+      githubUrl: 'https://github.com/rajat-kumar-thakur/ai-readme-generator',
       featured: true,
-      stats: {
-        stars: 89,
-        forks: 25,
-        users: '5k+'
-      }
+      stats: { users: '200+' }
     },
     {
-      title: 'Real-Time Chat Application',
-      description: 'A real-time chat application built with React.js, Node.js, and Socket.io. Features include private messaging, group chats, file sharing, and user presence indicators.',
-      image: 'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React.js', 'Node.js', 'Socket.io', 'MongoDB', 'Express.js'],
-      liveUrl: 'https://chat-app-demo.vercel.app',
-      githubUrl: 'https://github.com/rajat-thakur/chat-application',
+      title: 'Edge, Corner and Pose Estimation for Pick and Place Applications',
+      description: 'Prepared a 4x faster pipeline for pose estimation in point clouds using surface variation and Harris Corner detection. Achieved a 70% reduction in computation time compared to state-of-the-art methods.',
+      image: '',
+      technologies: ['Computer Vision'],
+      liveUrl: '',
+      githubUrl: '',
       featured: true,
-      stats: {
-        stars: 67,
-        forks: 18,
-        users: '3k+'
-      }
     },
     {
-      title: 'Task Management System',
-      description: 'A comprehensive task management system with project tracking, team collaboration, and analytics. Built with modern web technologies and responsive design.',
-      image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['Next.js', 'TypeScript', 'PostgreSQL', 'Tailwind CSS'],
-      liveUrl: 'https://task-manager-demo.vercel.app',
-      githubUrl: 'https://github.com/rajat-thakur/task-management',
-      featured: true,
-      stats: {
-        stars: 45,
-        forks: 12,
-        users: '2k+'
-      }
-    },
-    {
-      title: 'Weather Dashboard',
-      description: 'A responsive weather dashboard with location-based forecasts, interactive charts, and weather alerts using OpenWeatherMap API.',
-      image: 'https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React.js', 'Chart.js', 'OpenWeather API', 'CSS3'],
-      liveUrl: 'https://weather-app-demo.vercel.app',
-      githubUrl: 'https://github.com/rajat-thakur/weather-dashboard',
+      title: 'Low Light Image Enhancement using Deep Learning',
+      description: 'Executed a 2-phase approach for enhancing low-light images using Decomposition and Refinement techniques. Achieved 90% improvement in brightness and contrast.',
+      image: '',
+      technologies: ['Deep Learning', 'Image Processing'],
+      liveUrl: '',
+      githubUrl: '',
       featured: false,
-      stats: {
-        stars: 34,
-        forks: 8,
-        users: '1.5k+'
-      }
     },
     {
-      title: 'Blog Platform',
-      description: 'A modern blog platform with content management, user authentication, commenting system, and SEO optimization.',
-      image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['Next.js', 'MongoDB', 'NextAuth.js', 'Tailwind CSS'],
-      liveUrl: 'https://blog-platform-demo.vercel.app',
-      githubUrl: 'https://github.com/rajat-thakur/blog-platform',
+      title: 'File Sharing Web App',
+      description: 'Built a full-stack file sharing platform with automated email integration, managing 1000s of concurrent users. Added email automation for personalized download messages, improving engagement by 70%.',
+      image: '',
+      technologies: ['MERN'],
+      liveUrl: '',
+      githubUrl: '',
       featured: false,
-      stats: {
-        stars: 28,
-        forks: 7,
-        users: '1k+'
-      }
     },
     {
-      title: 'Portfolio Website',
-      description: 'A modern, responsive portfolio website showcasing projects and skills. Built with Next.js, TypeScript, and Tailwind CSS.',
-      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['Next.js', 'TypeScript', 'Tailwind CSS'],
-      liveUrl: 'https://portfolio-demo.vercel.app',
-      githubUrl: 'https://github.com/rajat-thakur/portfolio',
+      title: 'Restaurant Management System in Assembly',
+      description: 'Accelerated Microsoft Macro Assembler based RMS food service operations, reducing order processing time by 70%. Managed bill history and automated bill generation for restaurants.',
+      image: '',
+      technologies: ['x86 Assembly Language', 'MASM32'],
+      liveUrl: '',
+      githubUrl: '',
       featured: false,
-      stats: {
-        stars: 22,
-        forks: 5,
-        users: '800+'
-      }
     },
   ];
 

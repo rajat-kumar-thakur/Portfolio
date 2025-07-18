@@ -28,51 +28,46 @@ function SkillBar({ name, level }: SkillProps) {
 export function Skills() {
   const skillCategories = [
     {
-      title: 'Frontend',
+      title: 'Languages',
       icon: <Code className="h-6 w-6" />,
       skills: [
-        { name: 'React.js', level: 90 },
-        { name: 'Next.js', level: 85 },
-        { name: 'JavaScript', level: 95 },
-        { name: 'TypeScript', level: 80 },
-        { name: 'HTML/CSS', level: 90 },
-        { name: 'Tailwind CSS', level: 85 },
+        { name: 'C', level: 90 },
+        { name: 'C++', level: 90 },
+        { name: 'Python', level: 85 },
+        { name: 'R', level: 70 },
+        { name: 'JavaScript', level: 85 },
       ],
     },
     {
-      title: 'Backend',
-      icon: <Server className="h-6 w-6" />,
-      skills: [
-        { name: 'Node.js', level: 90 },
-        { name: 'Express.js', level: 88 },
-        { name: 'Python', level: 75 },
-        { name: 'REST APIs', level: 85 },
-        { name: 'GraphQL', level: 70 },
-        { name: 'Microservices', level: 75 },
-      ],
-    },
-    {
-      title: 'Database',
+      title: 'Databases',
       icon: <Database className="h-6 w-6" />,
       skills: [
-        { name: 'MongoDB', level: 90 },
-        { name: 'PostgreSQL', level: 80 },
+        { name: 'SQL', level: 80 },
         { name: 'MongoDB', level: 80 },
-        { name: 'MySQL', level: 75 },
-        { name: 'Redis', level: 75 },
-        { name: 'Firebase', level: 80 },
+        { name: 'PostgreSQL', level: 75 },
       ],
     },
     {
-      title: 'Tools & Others',
+      title: 'Frameworks & Tools',
+      icon: <Server className="h-6 w-6" />,
+      skills: [
+        { name: 'Next.js', level: 85 },
+        { name: 'React', level: 85 },
+        { name: 'Node.js', level: 80 },
+        { name: 'Express', level: 75 },
+        { name: 'Tailwind CSS', level: 80 },
+        { name: 'TensorFlow', level: 70 },
+      ],
+    },
+    {
+      title: 'Cloud & DevOps',
       icon: <Tool className="h-6 w-6" />,
       skills: [
-        { name: 'Git/GitHub', level: 90 },
-        { name: 'Docker', level: 80 },
-        { name: 'Kubernetes', level: 70 },
-        { name: 'AWS', level: 75 },
-        { name: 'Jenkins', level: 70 },
-        { name: 'Jest/Testing', level: 85 },
+        { name: 'Google Cloud Platform', level: 70 },
+        { name: 'Firebase', level: 70 },
+        { name: 'Docker (basics)', level: 60 },
+        { name: 'Git/GitHub', level: 85 },
+        { name: 'Postman', level: 75 },
       ],
     },
   ];
@@ -117,20 +112,33 @@ export function Skills() {
 
         {/* Additional Skills */}
         <div className="mt-16 text-center">
-          <h3 className="text-2xl font-semibold mb-8 text-foreground">Additional Expertise</h3>
+          <h3 className="text-2xl font-semibold mb-8 text-foreground">Relevant Coursework & Additional Expertise</h3>
           <div className="flex flex-wrap justify-center gap-4">
             {[
-              'Responsive Design',
-              'Microservices Architecture',
-              'Performance Optimization',
-              'SEO',
-              'Accessibility',
-              'Agile/Scrum',
-              'DevOps',
-              'Code Reviews',
-              'Technical Documentation',
-              'Problem Solving',
-              'Team Leadership',
+              'Data Structure',
+              'Software Engineering',
+              'Image Processing',
+              'Database Management',
+              'System Software',
+              'Data Analytics',
+              'Algorithms',
+              'Machine Learning',
+              'Cryptography',
+              'Computer Networks',
+              'Artificial Intelligence',
+              'Operating System',
+              'NumPy',
+              'Pandas',
+              'Pytorch',
+              'Matplotlib',
+              'VS Code',
+              'Jupyter Notebook',
+              'TensorBoard',
+              'Archimate',
+              'StarUML',
+              'Linux',
+              'Selenium',
+              'GitHub Actions',
             ].map((skill, index) => (
               <span
                 key={index}
