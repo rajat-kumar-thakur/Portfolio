@@ -1,8 +1,8 @@
 'use client';
 
 import { ExternalLink, Github, Star } from 'lucide-react';
-import { Card } from './ui/Card';
-import { Button } from './ui/Button';
+import { Card } from './ui/card';
+import { Button } from './ui/button';
 
 interface Project {
   title: string;

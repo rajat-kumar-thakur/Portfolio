@@ -2,8 +2,8 @@
 
 import { useState } from 'react';
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, CheckCircle } from 'lucide-react';
-import { Card } from './ui/Card';
-import { Button } from './ui/Button';
+import { Card } from './ui/card';
+import { Button } from './ui/button';
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -83,8 +83,8 @@ export function Contact() {
             Get In Touch
           </h2>
           <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-            I'm always open to discussing new opportunities, interesting projects, 
-            or just having a chat about technology. Let's connect!
+            I&apos;m always open to discussing new opportunities, interesting projects, 
+            or just having a chat about technology. Let&apos;s connect!
           </p>
         </div>
 
@@ -158,7 +158,7 @@ export function Contact() {
                     Message Sent Successfully!
                   </h4>
                   <p className="text-foreground/70">
-                    Thank you for your message. I'll get back to you soon.
+                    Thank you for your message. I&apos;ll get back to you soon.
                   </p>
                 </div>
               ) : (

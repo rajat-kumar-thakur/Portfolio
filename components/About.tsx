@@ -1,7 +1,7 @@
 'use client';
 
 import { User, MapPin, Calendar, Award } from 'lucide-react';
-import { Card } from './ui/Card';
+import { Card } from './ui/card';
 
 export function About() {
   return (

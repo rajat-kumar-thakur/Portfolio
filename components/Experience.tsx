@@ -1,7 +1,7 @@
 'use client';
 
 import { Calendar, MapPin, Building } from 'lucide-react';
-import { Card } from './ui/Card';
+import { Card } from './ui/card';
 
 interface ExperienceItem {
   title: string;

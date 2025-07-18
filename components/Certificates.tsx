@@ -1,7 +1,7 @@
 'use client';
 
 import { Award } from 'lucide-react';
-import { Card } from './ui/Card';
+import { Card } from './ui/card';
 
 const certificates = [
   {

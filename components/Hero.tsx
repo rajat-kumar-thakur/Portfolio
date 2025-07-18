@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { ChevronDown, Github, Linkedin, Mail, Download } from 'lucide-react';
-import { Button } from './ui/Button';
+import { Button } from './ui/button';
 
 export function Hero() {
   const [currentText, setCurrentText] = useState('');
