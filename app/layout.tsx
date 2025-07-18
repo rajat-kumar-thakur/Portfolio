@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Rajat Kumar Thakur | Portfolio',
-  keywords: ['Rajat Kumar Thakur', 'Full Stack Developer', 'React.js', 'Node.js', 'MongoDB', 'JavaScript', 'Portfolio'],
+  keywords: ['Rajat Kumar Thakur', 'Full Stack Developer', 'Next.js', 'Node.js', 'MongoDB', 'JavaScript', 'Portfolio'],
   authors: [{ name: 'Rajat Kumar Thakur' }],
   creator: 'Rajat Kumar Thakur',
   publisher: 'Rajat Kumar Thakur',
