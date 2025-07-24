@@ -59,7 +59,7 @@ export function Projects() {
       title: 'File Sharing Web App',
       description: 'Built a full-stack file sharing platform with automated email integration, managing concurrent users. Added email automation for personalized download messages, improving engagement.',
       image: '',
-      technologies: ['React', 'Node.js', 'Express', 'MongoDB'],
+      technologies: ['React.js', 'Node.js', 'Express', 'MongoDB'],
       liveUrl: '',
       githubUrl: 'https://github.com/rajat-kumar-thakur/File-Sharing-App',
       featured: false,
@@ -68,7 +68,7 @@ export function Projects() {
       title: 'Collaborative Whiteboard App',
       description: 'A collaborative whiteboard application built with TypeScript and Vite. Enables real-time drawing and collaboration using websockets on a digital canvas.',
       image: '/collab.png', // Add an image to public/ and update this path if available
-      technologies: ['TypeScript', 'Vite', 'WebSockets', 'Canvas API'],
+      technologies: ['React', 'Typescript', 'WebSockets', 'Canvas API'],
       liveUrl: 'https://basic-whiteboard-app.vercel.app/',
       githubUrl: 'https://github.com/rajat-kumar-thakur/Whiteboard-App',
       featured: false,
