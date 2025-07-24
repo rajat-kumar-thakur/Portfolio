@@ -32,11 +32,11 @@ export function Projects() {
       stats: {  users: '200+' }
     },
     {
-      title: 'Edge, Corner and Pose Estimation for Pick and Place Applications',
+      title: 'Accelerated Feature and Pose Estimation for Time-Critical Pick-and-Place Applications',
       description: 'Prepared a 4x faster pipeline for pose estimation in point clouds using surface variation and Harris Corner detection. Achieved a 70% reduction in computation time compared to state-of-the-art methods.',
       image: '/workflow.png',
       technologies: ['Computer Vision', 'Python', '3D Point Cloud'],
-      githubUrl: 'https://github.com/rajat-kumar-thakur/Edge-and-Corner-Detection',
+      githubUrl: 'https://github.com/rajat-kumar-thakur/Accelerated-Feature-and-Pose-Estimation-for-Time-Critical-Pick-and-Place-Applications',
       featured: true,
     },
     {
