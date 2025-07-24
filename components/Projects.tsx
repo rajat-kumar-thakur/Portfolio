@@ -64,6 +64,15 @@ export function Projects() {
       githubUrl: 'https://github.com/rajat-kumar-thakur/File-Sharing-App',
       featured: false,
     },
+    {
+      title: 'Collaborative Whiteboard App',
+      description: 'A collaborative whiteboard application built with TypeScript and Vite. Enables real-time drawing and collaboration using websockets on a digital canvas.',
+      image: '/collab.png', // Add an image to public/ and update this path if available
+      technologies: ['TypeScript', 'Vite', 'WebSockets', 'Canvas API'],
+      liveUrl: 'https://basic-whiteboard-app.vercel.app/',
+      githubUrl: 'https://github.com/rajat-kumar-thakur/Whiteboard-App',
+      featured: false,
+    },
   ];
 
   const featuredProjects = projects.filter(project => project.featured);
