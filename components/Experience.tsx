@@ -33,7 +33,7 @@ export function Experience() {
       title: 'Summer Research Intern',
       company: 'IIT Gandhinagar',
       location: 'Gujarat, India',
-      period: 'May 2024 - July 2024',
+      period: 'May 2025 - July 2025',
       description: 'Developed language models for code generation and execution on resource-constrained devices. Optimized SLMs, reducing inference latency by 46.3% for TinyLlama and achieving 2.57s for StarCoder.',
       achievements: [
         'Reduced inference latency by 46.3% for TinyLlama',
@@ -46,7 +46,7 @@ export function Experience() {
       title: 'Teaching Assistant',
       company: 'IIIT Vadodara',
       location: 'Gujarat, India',
-      period: 'Aug 2023 - Apr 2024',
+      period: 'Aug 2024 - Apr 2025',
       description: 'Mentored 90+ students in software engineering and C programming. Also assisted 100+ students in developing analytical and programming skills during C lab sessions.',
       achievements: [
         'Guided students in scalable software design',
@@ -58,7 +58,7 @@ export function Experience() {
       title: 'General Secretary of Academics Committee',
       company: 'IIIT Vadodara',
       location: 'Gujarat, India',
-      period: 'May 2023 - Apr 2024',
+      period: 'May 2024 - Apr 2025',
       description: 'Led a team of 8 in planning and executing academic-focused events. Organized and promoted 10+ academic events to enhance student engagement.',
       achievements: [
         'Organized 10+ academic events',
