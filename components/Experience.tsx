@@ -16,10 +16,24 @@ interface ExperienceItem {
 export function Experience() {
   const experiences: ExperienceItem[] = [
     {
+      title: 'Software Development Intern',
+      company: 'Cableteque Corporation',
+      location: 'Remote',
+      period: 'Sept 2025 - Present',
+      description: 'Assist in data preprocessing and cleaning for machine learning projects. Develop and optimize machine learning models using Python and relevant libraries. Conduct exploratory data analysis to identify trends and insights.',
+      achievements: [
+        'Implemented and tested different algorithms to evaluate model performance',
+        'Collaborated with the team to deploy and monitor ML models in production environments',
+        'Documented code, experiments, and results for knowledge sharing and reproducibility',
+        'Participated in team meetings to discuss project progress and brainstorm innovative solutions',
+      ],
+      technologies: ['Python', 'TensorFlow', 'PyTorch', 'scikit-learn', 'Machine Learning', 'Data Analysis'],
+    },
+    {
       title: 'Summer Research Intern',
       company: 'IIT Gandhinagar',
       location: 'Gujarat, India',
-      period: 'May 2025 - July 2025',
+      period: 'May 2024 - July 2024',
       description: 'Developed language models for code generation and execution on resource-constrained devices. Optimized SLMs, reducing inference latency by 46.3% for TinyLlama and achieving 2.57s for StarCoder.',
       achievements: [
         'Reduced inference latency by 46.3% for TinyLlama',
@@ -32,7 +46,7 @@ export function Experience() {
       title: 'Teaching Assistant',
       company: 'IIIT Vadodara',
       location: 'Gujarat, India',
-      period: 'Aug 2024 - Apr 2025',
+      period: 'Aug 2023 - Apr 2024',
       description: 'Mentored 90+ students in software engineering and C programming. Also assisted 100+ students in developing analytical and programming skills during C lab sessions.',
       achievements: [
         'Guided students in scalable software design',
@@ -44,7 +58,7 @@ export function Experience() {
       title: 'General Secretary of Academics Committee',
       company: 'IIIT Vadodara',
       location: 'Gujarat, India',
-      period: 'May 2024 - Apr 2025',
+      period: 'May 2023 - Apr 2024',
       description: 'Led a team of 8 in planning and executing academic-focused events. Organized and promoted 10+ academic events to enhance student engagement.',
       achievements: [
         'Organized 10+ academic events',
